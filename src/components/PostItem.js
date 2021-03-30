@@ -1,8 +1,7 @@
 import moment from 'moment';
 import React from 'react';
-import {Text, View} from 'react-native';
-
-import {postitem} from './styles';
+import { Text, View } from 'react-native';
+import { postitem } from './styles';
 
 const PostItem = (props) => {
   return (
@@ -28,4 +27,4 @@ const PostItem = (props) => {
   );
 };
 
-export {PostItem};
+export { PostItem };
