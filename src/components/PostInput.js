@@ -1,8 +1,7 @@
-import React, {useRef} from 'react';
-import {View, TextInput, TouchableOpacity} from 'react-native';
+import React, { useRef } from 'react';
+import { View, TextInput, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
-import {post_input} from './styles';
+import { post_input } from './styles';
 
 const PostInput = (props) => {
   const [postText, setPostText] = React.useState('');
@@ -20,7 +19,7 @@ const PostInput = (props) => {
         />
       </View>
       <TouchableOpacity
-        style={{justifyContent: 'center'}}
+        style={{ justifyContent: 'center' }}
         onPress={() => {
           props.onSendPost(postText);
           inputRef.current.clear();
@@ -31,4 +30,4 @@ const PostInput = (props) => {
   );
 };
 
-export {PostInput};
+export { PostInput };
