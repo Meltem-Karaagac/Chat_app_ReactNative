@@ -21,7 +21,7 @@ const Header = (props) => {
         />
         <Icon
           name="logout"
-          size={30}
+          size={32}
           color="#833471"
           onPress={props.onLogOut}
           style={{ marginRight: 18 }}
