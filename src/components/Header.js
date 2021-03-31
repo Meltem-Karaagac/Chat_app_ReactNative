@@ -1,8 +1,7 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
-import {header} from './styles';
+import { header } from './styles';
 
 const Header = (props) => {
   return (
@@ -10,7 +9,7 @@ const Header = (props) => {
       <View style={header.textContainer}>
         <Text style={header.text}> # {props.title}</Text>
       </View>
-      <View style={{justifyContent: 'center', flexDirection: 'row'}}>
+      <View style={{ justifyContent: 'center', flexDirection: 'row' }}>
         <Icon
           name="message-bulleted"
           size={34}
@@ -25,11 +24,11 @@ const Header = (props) => {
           size={30}
           color="#833471"
           onPress={props.onLogOut}
-          style={{marginRight: 18}}
+          style={{ marginRight: 18 }}
         />
       </View>
     </View>
   );
 };
 
-export {Header};
+export { Header };
